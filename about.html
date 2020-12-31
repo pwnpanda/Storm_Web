@@ -4,6 +4,11 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/united/bootstrap.min.css" integrity="sha384-JW3PJkbqVWtBhuV/gsuyVVt3m/ecRJjwXC3gCXlTzZZV+zIEEl6AnryAriT7GWYm" crossorigin="anonymous">
+		<style type="text/css">
+			td {
+				padding-left: 10px;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- Navbar -->
@@ -36,14 +41,33 @@
 		</nav>
 
 		<!-- Content -->
-		<div class="container" style="padding: 4rem 0rem">
+		<div class="container" style="padding: 6rem 0rem">
 			<div class="row">
-				<div class="col">
+				<div class="col-6">
+					<h5 class="display-7"><u>Info</u></h5>
+					<table>
+						<tbody>
+							<tr><th><u>Name</u>:</th> <td>Storm</td></td></tr>
+							<tr><th><u>Color</u>:</th> <td>Red</td></tr>
+							<tr><th><u>Sex</u>:</th> <td>Male</td></tr>
+							<tr><th><u>Birth date</u>:</th> <td>30.10.2019</td></tr>
+							<tr><th><u>From</u>:</th> <td>Chiba, Japan</td></tr>
+							<tr><th><u>Lives in</u>:</th> <td>Oslo, Norway</td></tr>
+						</tbody>
+					</table>
 				</div>
-				<div class="col-6 text-center">
-					Hello
+				<!--<div class="col-md-4 col-lg-4"></div>-->
+				<div class="col-6">
+					<h5 class="display-7"><u>Videos</u></h5>
+					<video width="320" height="240" style="padding:10px;" controls>
+						<source src="vid.mp4" type="video/mp4">
+					</video>
+					<br>
+					<video width="320" height="240" style="padding:10px;" controls>
+						<source src="vid2.mp4" type="video/mp4">
+					</video>
 				</div>
-				<div class="col"></div>
+				</div>
 			</div>
 		</div>
 
