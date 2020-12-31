@@ -2,4 +2,7 @@
 *.jpg
 *.png
 *.mp4
+old
+old/
+old/*
 
