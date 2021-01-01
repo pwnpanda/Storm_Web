@@ -12,6 +12,9 @@
 		<!-- Bootstrap - bootswatch -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/united/bootstrap.min.css" integrity="sha384-JW3PJkbqVWtBhuV/gsuyVVt3m/ecRJjwXC3gCXlTzZZV+zIEEl6AnryAriT7GWYm" crossorigin="anonymous">
 
+		<!-- Custom script -->
+		<script type="text/javascript" src="utils.js"></script>
+
 		<!-- Custom style -->
 		<style type="text/css">
 			td {
@@ -19,68 +22,6 @@
 			}
 			html { scroll-behavior: smooth; }
 		</style>
-
-		<!-- Custom script -->
-		<script type="text/javascript">
-			function setActiveElement(el){
-				el.classList.add('active');
-			}
-
-			function removeAllActive(nodes){
-				nodes[1].classList.remove("active");
-				nodes[3].classList.remove("active");
-				nodes[5].classList.remove("active");
-				nodes[7].classList.remove("active");
-			}
-
-			function setActive(item) {
-				list = "";
-				current = "";
-
-				// Handle case of pressing the main logo
-				if (item == "home") {
-					current = document.getElementById("nav1");
-					// Get list of all elements in navbar
-					list = document.getElementById("nav1").parentElement.childNodes;
-
-				} else{
-					// Move to location
-					window.location = item.attributes.href.value;
-					// Get list of all elements in navbar
-					list = item.parentElement.parentElement.childNodes;
-					current = item.parentElement;
-				}
-
-				// Reset all active items and assign active to current section
-				removeAllActive(list);
-				// Add current element as active
-				setActiveElement(current);
-			}
-
-			$(window).scroll(function() {
-			    var height = $(window).scrollTop();
-			    
-			    // Use to measure when to change
-			    console.log(height);
-
-			    list = document.getElementById("navs").childNodes;
-			    removeAllActive(list);
-
-			    if(height  >= 6556) {
-			    	// set contact_us
-			    	setActiveElement(document.getElementById("nav4"));
-			    } else if (height >= 1397){
-			    	// set images
-			    	setActiveElement(document.getElementById("nav3"));
-			    } else if (height >= 621){
-			    	// set about
-			    	setActiveElement(document.getElementById("nav2"));
-			    } else {
-			    	// set home
-			    	setActiveElement(document.getElementById("nav1"));
-			    }
-			});
-		</script>
 	</head>
 	<body>
 		<!-- Navbar -->
@@ -135,12 +76,17 @@
 					<h5 class="display-7"><u>Info</u></h5>
 					<table>
 						<tbody>
-							<tr><th><u>Name</u>:</th> <td>Storm</td></td></tr>
-							<tr><th><u>Color</u>:</th> <td>Red</td></tr>
-							<tr><th><u>Sex</u>:</th> <td>Male</td></tr>
-							<tr><th><u>Birth date</u>:</th> <td>30.10.2019</td></tr>
-							<tr><th><u>From</u>:</th> <td>Chiba, Japan</td></tr>
-							<tr><th><u>Lives in</u>:</th> <td>Oslo, Norway</td></tr>
+							<tr><th><b>Name</b>:</th> <td>Storm</td></td></tr>
+							<tr><th><b>Breed</b>:</th> <td>Shiba Inu (柴犬)</td></td></tr>
+							<tr><th><b>Color</b>:</th> <td>Red</td></tr>
+							<tr><th><b>Sex</b>:</th> <td>Male</td></tr>
+							<tr><th><b>Weight</b>:</th> <td>9.7 kg</td></tr>
+							<tr><th><b>Height</b>:</th> <td>55 cm</td></tr>
+							<tr><th><b>Length</b>:</th> <td>70 cm</td></tr>
+							<tr><th><b>Age</b>:</th> <td id="dob"></td></tr>
+							<tr><th><b>Birth date</b>:</th> <td>30.10.2019</td></tr>
+							<tr><th><b>From</b>:</th> <td>Chiba, Japan</td></tr>
+							<tr><th><b>Lives in</b>:</th> <td>Oslo, Norway</td></tr>
 						</tbody>
 					</table>
 				</div>
@@ -187,5 +133,9 @@
 		  <br>
 		  Phone number: +47 97 19 88 83
 		</div>
+
+		<script type="text/javascript">
+			getAge();
+		</script>
 	</body>
 </html>
