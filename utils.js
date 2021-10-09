@@ -41,6 +41,7 @@ $(window).scroll(function() {
     console.log(height);
     list = document.getElementById("navs").childNodes;
     removeAllActive(list);
+    // TODO Update for adding videos!
     if(height  >= 6556) {
     	// set contact_us
     	setActiveElement(document.getElementById("nav4"));

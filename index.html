@@ -1,5 +1,8 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Title -->
+		<title>Storm the Shiba</title>
 		<!-- Favicon -->
 		<link rel="icon" href="static/storm.png">
 		<!-- META -->
@@ -46,12 +49,17 @@
 			        	<span class="sr-only">About</span>
 			        </a>
 			      </li>
-			      <li class="nav-item" id="nav3">
+				  <li class="nav-item" id="nav3">
+			        <a class="nav-link" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" href="#videos" onclick="setActive(this)">Videos
+			        	<span class="sr-only">Videos</span>
+			        </a>
+			      </li>
+			      <li class="nav-item" id="nav4">
 			        <a class="nav-link" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" href="#images" onclick="setActive(this)">Images
 			        	<span class="sr-only">Images</span>
 			        </a>
 			      </li>
-			      <li class="nav-item" id="nav4">
+			      <li class="nav-item" id="nav5">
 			        <a class="nav-link"  data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" href="#contact_us" onclick="setActive(this)">Contact Us
 			        	<span class="sr-only">Contact us</span>
 			        </a>
@@ -66,23 +74,28 @@
 		  <img src="hori.jpeg" width="380" class="img-fluid rounded mx-auto d-block" alt="Storm on the couch">
 		  <h1 class="display-5" style="padding-top: 1rem">Hi, I am Storm!</h1>
 		  <p class="lead"></p>
-		  <p>I am a male Shiba Inu from Japan. I'm energetic, playful and love all people and animals.</p>
+		  <p>I am a male Shiba Inu from Japan. I'm energetic, playful and love all people and animals.
+			  <br>
+			Check out information about me below :)
+		</p>
 		</div>
 
 
 		<!-- Content About -->
 		<div class="container" id="about" style="padding: 6rem 0rem">
-		    <h1 class="display-5" style="padding-top: 1rem;" >About</h1>
+			<h1 class="display-5" style="padding-top: 1rem;" >About</h1>
 			<div class="row">
-				<div class="col-6">
-					<h5 class="display-7"><u>Info</u></h5>
-					<table>
+				<div class="col-md-2 col-lg-2">
+					<p style="display: flex; justify-content: end; align-items: end;"><u style="font-size: larger;">Info</u></p>
+				</div>
+				<div class="col-md-6 col-lg-6">
+					<table style="display: flex; justify-content: center; align-items: center;">
 						<tbody>
 							<tr><th><b>Name</b>:</th> <td>Storm</td></td></tr>
 							<tr><th><b>Breed</b>:</th> <td>Shiba Inu (柴犬)</td></td></tr>
 							<tr><th><b>Color</b>:</th> <td>Red</td></tr>
 							<tr><th><b>Sex</b>:</th> <td>Male</td></tr>
-							<tr><th><b>Weight</b>:</th> <td>9.7 kg</td></tr>
+							<tr><th><b>Weight</b>:</th> <td>10.6 kg</td></tr>
 							<tr><th><b>Height</b>:</th> <td>55 cm</td></tr>
 							<tr><th><b>Length</b>:</th> <td>70 cm</td></tr>
 							<tr><th><b>Age</b>:</th> <td id="dob"></td></tr>
@@ -93,22 +106,38 @@
 						</tbody>
 					</table>
 				</div>
-				<!--<div class="col-md-4 col-lg-4"></div>-->
-				<div class="col-6">
-					<h5 class="display-7"><u>Videos</u></h5>
-					<video width="320" height="240" style="padding:10px;" controls>
-						<source src="vid.mp4" type="video/mp4">
-					</video>
-					<br>
-					<video width="320" height="240" style="padding:10px;" controls>
-						<source src="vid2.mp4" type="video/mp4">
-					</video>
-				</div>
-				</div>
+				<div class="col-md-2 col-lg-2"></div>
 			</div>
 		</div>
 
+		<!-- Content Videos -->
+		<div class="container" id="videos" style="padding: 6rem 0rem">
+			<h1 class="display-5" style="padding-top: 1rem;" >Videos</h1>
+			<!-- Playlist -->
+			<a style="display: flex; justify-content: center; align-items: center;" href="https://www.youtube.com/playlist?list=PLO26oyLmpBbUec6qISO1BbXPbI1YyOQFs">Click here for playlist containing these and more videos!</a>
+			<br>
+			<div class="row">
+				<div class="col-6">
+					<!-- Storm ambulance -->
+					<iframe width="445" height="250" src="https://www.youtube.com/embed/OTeHQP06wEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<!-- Running Storm -->
+					<iframe width="445" height="250" src="https://www.youtube.com/embed/PuWN7YQEdKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<!-- Angry Shiba -->
+					<iframe width="445" height="250" src="https://www.youtube.com/embed/KbIX2gD-NsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="col-6">
+					<!-- Storm ambulance 2 -->
+					<iframe width="445" height="250" src="https://www.youtube.com/embed/RG_AmRPVSJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+					<!-- Storm zoomies outside -->
+					<iframe width="445" height="250" src="https://www.youtube.com/embed/v1-JJaJRKbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<!-- Good baby Storm -->
+					<iframe width="445" height="250" src="https://www.youtube.com/embed/_ljQVafIYXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			  </div>
+		</div>
+
 		<!-- Content Images -->
+		<!-- Load 4 - 6 images and lazyload rest -->
 		<div class="container" id="images" style="padding: 6rem 0rem">
 		  <h1 class="display-5" style="padding-top: 1rem;" >Images</h1>
 			<div class="row">
@@ -126,6 +155,22 @@
 					<img src="/static/vert.jpg" class="img-fluid mb-4 rounded mx-auto" alt="responsive test image">
 					<img src="/static/hori.jpeg" class="img-fluid mb-4 rounded mx-auto" alt="responsive test image">
 				</div>
+				<!--
+				<div class="col-md-4 col-lg-4">
+					<img src="/static/vert.jpg" loading="lazy" class="img-fluid mb-4 rounded mx-auto" alt="responsive test image">
+					<img src="/static/vert.jpg" loading="lazy" class="img-fluid mb-4 rounded mx-auto" alt="responsive test image">
+				</div>
+				<div class="col-md-4 col-lg-4">
+					<img src="/static/vert.jpg" loading="lazy" class="img-fluid mb-4 rounded mx-auto" alt="responsive test image">
+					<img src="/static/hori.jpeg" loading="lazy" class="img-fluid mb-4 rounded mx-auto" alt="responsive test image">
+					<img src="/static/hori.jpeg" loading="lazy" class="img-fluid mb-4 rounded mx-auto" alt="responsive test image">
+				</div>
+				<div class="col-md-4 col-lg-4">
+					<img src="/static/hori.jpeg" loading="lazy" class="img-fluid mb-4 rounded mx-auto" alt="responsive test image">
+					<img src="/static/vert.jpg" loading="lazy" class="img-fluid mb-4 rounded mx-auto" alt="responsive test image">
+					<img src="/static/hori.jpeg" loading="lazy" class="img-fluid mb-4 rounded mx-auto" alt="responsive test image">
+				</div>
+				-->
 			</div>
 		</div>
 
