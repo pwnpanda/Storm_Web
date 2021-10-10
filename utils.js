@@ -35,25 +35,32 @@ function setActive(item) {
 	setActiveElement(current);
 }
 
+function setIfDifferentHash(current, target){
+    if (current != target)  window.location.hash = target
+}
+
 $(window).scroll(function() {
     var height = $(window).scrollTop();    
     // Use to measure when to change
     console.log(height);
     list = document.getElementById("navs").childNodes;
     removeAllActive(list);
-    // TODO Update for adding videos!
-    if(height  >= 6556) {
+    if(height  >= 2880) {
     	// set images
     	setActiveElement(document.getElementById("nav4"));
-    } else if (height >= 1397){
+        setIfDifferentHash(window.location.hash, "#images")
+    } else if (height >= 1520){
     	// set videos
     	setActiveElement(document.getElementById("nav3"));
-    } else if (height >= 621){
+        setIfDifferentHash(window.location.hash, "#videos")
+    } else if (height >= 880){
     	// set about
     	setActiveElement(document.getElementById("nav2"));
+        setIfDifferentHash(window.location.hash, "#about")
     } else {
     	// set home
     	setActiveElement(document.getElementById("nav1"));
+        setIfDifferentHash(window.location.hash, "#home")
     }
 });
 
