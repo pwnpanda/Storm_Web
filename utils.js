@@ -49,7 +49,7 @@ $(window).scroll(function() {
     	// set images
     	setActiveElement(document.getElementById("nav4"));
         setIfDifferentHash(window.location.hash, "#images")
-    } else if (height >= 1520){
+    } else if (height >= 1420){
     	// set videos
     	setActiveElement(document.getElementById("nav3"));
         setIfDifferentHash(window.location.hash, "#videos")
