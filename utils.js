@@ -43,10 +43,10 @@ $(window).scroll(function() {
     removeAllActive(list);
     // TODO Update for adding videos!
     if(height  >= 6556) {
-    	// set contact_us
+    	// set images
     	setActiveElement(document.getElementById("nav4"));
     } else if (height >= 1397){
-    	// set images
+    	// set videos
     	setActiveElement(document.getElementById("nav3"));
     } else if (height >= 621){
     	// set about
