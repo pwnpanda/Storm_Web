@@ -53,7 +53,7 @@ $(window).scroll(function() {
     	// set videos
     	setActiveElement(document.getElementById("nav3"));
         setIfDifferentHash(window.location.hash, "#videos")
-    } else if (height >= 880){
+    } else if (height >= 720){
     	// set about
     	setActiveElement(document.getElementById("nav2"));
         setIfDifferentHash(window.location.hash, "#about")
