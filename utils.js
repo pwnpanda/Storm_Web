@@ -42,7 +42,7 @@ function setIfDifferentHash(current, target){
 $(window).scroll(function() {
     var height = $(window).scrollTop();    
     // Use to measure when to change
-    console.log(height);
+    // console.log(height);
     list = document.getElementById("navs").childNodes;
     removeAllActive(list);
     if(height  >= 2880) {
