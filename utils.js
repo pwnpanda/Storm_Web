@@ -16,7 +16,7 @@ function removeAllActive(nodes){
 }
 
 function setActive(item, stopChangeLocal=false) {
-    console.warn(stopChangeLocal)
+    //console.warn(stopChangeLocal)
     stopChange = stopChangeLocal
 
 	let list = "";
