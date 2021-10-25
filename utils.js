@@ -1,3 +1,4 @@
+let stopChange = false
 function getAge(){
 	dob = dateDiff('2019-10-31');
 	document.getElementById('dob').innerText = dob;
@@ -14,9 +15,12 @@ function removeAllActive(nodes){
 	nodes[7].classList.remove("active");
 }
 
-function setActive(item) {
-	list = "";
-	current = "";
+function setActive(item, stopChangeLocal=false) {
+    console.warn(stopChangeLocal)
+    stopChange = stopChangeLocal
+
+	let list = "";
+	let current = "";
 	// Handle case of pressing the main logo
 	if (item == "home") {
 		current = document.getElementById("nav1");
@@ -36,24 +40,27 @@ function setActive(item) {
 }
 
 function setIfDifferentHash(current, target){
-    if (current != target)  window.location.hash = target
+    if (current != target){
+        if (!stopChange)    window.location.hash = target
+    }
+    else    stopChange = false
 }
 
 $(window).scroll(function() {
     var height = $(window).scrollTop();    
     // Use to measure when to change
     // console.log(height);
-    list = document.getElementById("navs").childNodes;
+    let list = document.getElementById("navs").childNodes;
     removeAllActive(list);
-    if(height  >= 2880) {
+    if(height  >= 3145) {
     	// set images
     	setActiveElement(document.getElementById("nav4"));
         setIfDifferentHash(window.location.hash, "#images")
-    } else if (height >= 1420){
+    } else if (height >= 1510){
     	// set videos
     	setActiveElement(document.getElementById("nav3"));
         setIfDifferentHash(window.location.hash, "#videos")
-    } else if (height >= 720){
+    } else if (height >= 600){
     	// set about
     	setActiveElement(document.getElementById("nav2"));
         setIfDifferentHash(window.location.hash, "#about")

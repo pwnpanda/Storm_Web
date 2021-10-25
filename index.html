@@ -33,7 +33,7 @@
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
 		  <div class="container">
-			  <a class="navbar-brand" href="#home" onclick="setActive('home')">Storm The Shiba</a>
+			  <a class="navbar-brand" href="#home" onclick="setActive('home', true)">Storm The Shiba</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
@@ -41,22 +41,22 @@
 			  <div class="collapse navbar-collapse" id="navbarColor01">
 			    <ul class="navbar-nav ml-auto" id="navs">
 			      <li class="nav-item active" id="nav1">
-			        <a class="nav-link"  data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" href="#home" onclick="setActive(this)">Home
+			        <a class="nav-link"  data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" href="#home" onclick="setActive(this, true)">Home
 			          <span class="sr-only">Home - current</span>
 			        </a>
 			      </li>
 			      <li class="nav-item" id="nav2">
-			        <a class="nav-link" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" href="#about" onclick="setActive(this)">About
+			        <a class="nav-link" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" href="#about" onclick="setActive(this, true)">About
 			        	<span class="sr-only">About</span>
 			        </a>
 			      </li>
 				  <li class="nav-item" id="nav3">
-			        <a class="nav-link" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" href="#videos" onclick="setActive(this)">Videos
+			        <a class="nav-link" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" href="#videos" onclick="setActive(this, true)">Videos
 			        	<span class="sr-only">Videos</span>
 			        </a>
 			      </li>
 			      <li class="nav-item" id="nav4">
-			        <a class="nav-link" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" href="#images" onclick="setActive(this)">Images
+			        <a class="nav-link" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" href="#images" onclick="setActive(this, true)">Images
 			        	<span class="sr-only">Images</span>
 			        </a>
 			      </li>
@@ -86,7 +86,7 @@
 
 
 		<!-- Content About -->
-		<div class="container" id="about" style="padding: 6rem 0rem">
+		<div class="container" id="about" style="padding: 12rem 0rem">
 			<h1 class="display-5" style="padding-top: 1rem;" >About</h1>
 			<div class="row">
 				<div class="col-md-2 col-lg-2">
@@ -117,7 +117,7 @@
 		</div>
 
 		<!-- Content Videos -->
-		<div class="container" id="videos" style="padding: 6rem 0rem">
+		<div class="container" id="videos" style="padding: 12rem 0rem">
 			<h1 class="display-5" style="padding-top: 1rem;" >Videos</h1>
 			<div class="row">
 				<div class="col-md-6 col-lg-6">
@@ -160,7 +160,7 @@
 
 		<!-- Content Images -->
 		<!-- Load 4 - 6 images and lazyload rest -->
-		<div class="container" id="images" style="padding: 6rem 0rem">
+		<div class="container" id="images" style="padding: 12rem 0rem">
 		  <h1 class="display-5" style="padding-top: 1rem;" >Images</h1>
 			<div class="row">
 				<div class="col-md-4 col-lg-4">
