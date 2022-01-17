@@ -52,11 +52,11 @@ $(window).scroll(function() {
     // console.log(height);
     let list = document.getElementById("navs").childNodes;
     removeAllActive(list);
-    if(height  >= 3145) {
+    if(height  >= 3160) {
     	// set images
     	setActiveElement(document.getElementById("nav4"));
         setIfDifferentHash(window.location.hash, "#images")
-    } else if (height >= 1510){
+    } else if (height >= 1750){
     	// set videos
     	setActiveElement(document.getElementById("nav3"));
         setIfDifferentHash(window.location.hash, "#videos")
